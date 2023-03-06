@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Konversi Nilai</title>
+</head>
+<script language="javascript">
+    // buat fungsi untuk proses konversi
+    function konversi(){
+        var val1 = document.kirim. T1. value 
+        // jika nilai angka diatas 0 dan dibawah 40 maka nilai E
+        if (val1 >= 0 && val1 <= 40) {
+				document.kirim.T2.value= "E";
+        // jika nilai angka diatas 41 dan dibawah 55 maka nilai D       
+			} else if (val1 >= 41 && val1 <= 55) {
+				document.kirim.T2.value = "D";
+        // jika nilai angka diatas 56 dan dibawah 60 maka nilai C       
+			} else if (val1 >= 56 && val1 <= 60) {
+				document.kirim.T2.value= "C";
+        // jika nilai angka diatas 61 dan dibawah 65 maka nilai BC       
+			} else if (val1 >= 61 && val1 <= 65) {
+				document.kirim.T2.value= "BC";
+        // jika nilai angka diatas 66 dan dibawah 70 maka nilai B        
+			} else if (val1 >= 66 && val1 <= 70) {
+				document.kirim.T2.value= "B";
+        // jika nilai angka diatas 71 dan dibawah 80 maka nilai AB        
+			} else if (val1 >= 71 && val1 <= 80) {
+				document.kirim.T2.value= "AB";
+        // jika nilai angka diatas 81 dan dibawah 100 maka nilai A        
+			} else if (val1 >= 81 && val1 <= 100) {
+				document.kirim.T2.value = "A";
+			} else {
+				// menampilkan error nilai tidak valid 
+				window.alert("Nilai tidak valid")
+				return;
+			}
+    }
+</script>
+<body>
+    <!-- Membuat form untuk tampilan proses konversi-->
+    <form method = "POST" name = "kirim">
+        <p>
+            Nilai<input type="text" name="T1" size= "20"> 
+        </p>
+        <p>
+            Konversi Nilai <input type = "text" name="T2" size="20">
+        </p>
+        <p>
+            <!-- Button untuk memulai proses konversi -->
+            <input type = "button" value = "Tebak" name="B1" onclick=konversi()>
+        </p>
+    </form> 
+    <!-- Memberi informasi kapan file html di modifikasi -->
+    <script language="javascript">
+		document.write("Dimodifikasi terakhir pada " + document.lastModified);
+	</script>
+</body>
+</html>

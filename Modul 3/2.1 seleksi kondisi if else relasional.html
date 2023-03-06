@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contoh program javascript</title>
+    <script language = "javascript">
+        function test () {
+            val1=window.prompt("Nilai I : ")
+            val2=window.prompt("Nilai II :")
+            document.write("<br>" + "val1==val2"+ "<br>")
+            document.write(val1==val2)
+            document.write("<br>" + "val1!=val2"+ "<br>")
+            document.write(val1!=val2)
+            document.write("<br>" + "val1&gtval2"+ "<br>")
+            document.write(val1>val2)
+            document.write("<br>" + "val1&ltval2"+ "<br>")
+            document.write(val1<val2)
+        }
+    </script>
+</head>
+<body>
+    <input type="button" name="button1" value="relational" onclick=test()>
+</body>
+</html>
