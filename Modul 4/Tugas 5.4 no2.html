@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <script src = "jquery.js"></script>
+    <script type="text/javascript">
+        // Pembuatan script fungsi proses saat kita doubleclik kubus yang ada
+       $(document).ready(function(){
+        $(".kubus").dblclick(function(){
+            if ($(this).css("background-color") == "rgb(255, 255, 0)"){
+                $(this).css("background-color", "red");
+            }else {
+                $(this).css("background-color", "yellow");
+            }
+        });
+       });
+
+    </script>
+<!-- pembuatan css untuk container dan kubus yang ada  -->
+     <style type ="text/css">
+        .container {
+            display: flex;
+        }
+        .kubus{
+            width: 50px;
+            height: 50px;
+            background: rgb(255, 255, 0);
+            border: 2px solid black;
+            padding: 5%;
+            margin: 5px;
+        }
+       
+    </style>
+</head>
+<body>
+    <!-- Penampilan kubus pada halaman website  -->
+    <div class = "container">
+    <div class = "kubus"></div>
+    <div class = "kubus"></div>
+    <div class = "kubus"></div>
+    <div class = "kubus"></div>
+</div>
+</body>
+</html>

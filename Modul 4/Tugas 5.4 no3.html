@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src = "jquery.js"></script>
+    <script type="text/javascript">
+        // pembuatan proses fungsi sembunyi, tampil, dan fade
+        $(document).ready(function(){
+            $(".tampil").click(function(){$("#kubus").show("slow")});
+            $(".sembunyi").click(function(){$("#kubus").hide("slow");});
+            $(".opacity").click(function(){$("#kubus").css("opacity", 0.3);});
+            $(".backOpacity").click(function(){$("#kubus").css("opacity", 1.0);});
+        });
+        
+    </script>
+    <style type ="text/css">
+        /* pembuatan kubus */
+        #kubus{
+            width: 250px;
+            height: 250px;
+            background: yellow;
+            border: 2px solid black;
+            padding: 5%;
+        }
+    </style>
+</head>
+<body>
+    <!-- Penampilan kubus dan button di html  -->
+    <div id = "kubus"></div>
+    <button class = "tampil">Fade in</button>
+    <button class = "sembunyi">Fade out</button>
+    <button class = "opacity">Fade to 0.3</button>
+    <button class = "backOpacity">Reset Opacity</button>
+</body>
+</html>

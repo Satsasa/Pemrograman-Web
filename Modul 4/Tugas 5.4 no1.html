@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas 2 gambar sembunyi</title>
+    <script type="text/javascript" src = "jquery.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(".sembunyi").click(function() {$("#foto").hide("slow")});
+            $(".tampil").click(function() {$("#foto").show("slow")});
+            $(".sembunyi1").click(function() {$("#foto1").hide("slow")});
+            $(".tampil1").click(function() {$("#foto1").show("slow")});
+        });
+    </script>
+     <style type = "text/css">
+        .container{
+            width: 250px;
+            height: 250px;
+            display: flex;
+        }
+    </style>
+</head>
+<body>
+    <button class = "sembunyi">sembunyi</button>
+    <button class = "tampil">tampil</button>
+    <div class = "container">
+    <img id = "foto" src ="crazy in love png.png"></div>
+    <br>
+    <button class = "sembunyi1">sembunyi</button>
+    <button class = "tampil1">tampil</button>
+    <br>
+    <div class = "container">
+    <img id = "foto1" src ="logoupnbaru.png"></div>
+</body>
+</html>
