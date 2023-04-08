@@ -1,0 +1,19 @@
+.img-fluid {
+	display: flex;
+    flex: 1 1 auto;
+}
+.rounded{
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+.section{
+	padding: 30px;
+}
+.section .title{
+	padding-left: 180px;
+	padding-bottom: 5px;
+}
+.navbar{
+	background-color: #31a93f
+}
